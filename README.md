@@ -3,7 +3,6 @@
 
 This project deploys **Suricata** as an **IDPS** to detect and block attacks generated from an attacker machine (Kali) against a vulnerable target (Metasploitable).  
 The goal is to understand how Suricata works, including:
-
 - IDS and IPS modes  
 - Suricata architecture  
 - Configuration files  
@@ -12,3 +11,19 @@ The goal is to understand how Suricata works, including:
 - Alert and drop analysis  
 
 This environment provides a clear introduction to intrusion detection and prevention.
+
+## Architecture
+
+This lab uses a simple 3‑machine network:
+- **Ubuntu (Suricata IDPS):** monitors traffic, detects attacks, and blocks malicious packets.  
+- **Kali (Attacker):** generates scans, exploits, DoS, and brute‑force traffic.  
+- **Metasploitable (Victim):** vulnerable machine used to trigger Suricata alerts.
+<img width="1808" height="540" alt="Architecture" src="https://github.com/user-attachments/assets/b504a510-a71e-49ff-a3b8-ec3714d58609" />
+
+
+Suricata can operate in two modes:
+- **IDS mode (passive):** Suricata only listens and generates alerts.  
+- **IPS mode (inline):** Suricata analyzes packets and drops malicious ones in real time.
+
+This architecture allows testing detection first, then prevention.
+
