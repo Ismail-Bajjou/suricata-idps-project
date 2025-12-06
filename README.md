@@ -18,7 +18,7 @@ This lab uses a simple 3‑machine network:
 - **Ubuntu (Suricata IDPS):** monitors traffic, detects attacks, and blocks malicious packets.  
 - **Kali (Attacker):** generates scans, exploits, DoS, and brute‑force traffic.  
 - **Metasploitable (Victim):** vulnerable machine used to trigger Suricata alerts.
-<img width="1808" height="540" alt="Architecture" src="https://github.com/user-attachments/assets/b504a510-a71e-49ff-a3b8-ec3714d58609" />
+![Architecture](images/architecture.png)
 
 
 Suricata can operate in two modes:
