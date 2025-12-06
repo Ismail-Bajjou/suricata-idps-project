@@ -35,6 +35,6 @@ sudo apt update && sudo apt install suricata && sudo suricata-update
 It downloads the latest rules (including Emerging Threats) so Suricata can detect current threats.
 
 ## Checking Suricata Version 
-'''bash 
+```bash 
 suricata --version
-'''
+```
