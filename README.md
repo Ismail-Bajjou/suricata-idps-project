@@ -33,3 +33,8 @@ sudo apt update && sudo apt install suricata && sudo suricata-update
 ```
 **suricata-update** is the official way to update and manage rules for Suricata.
 It downloads the latest rules (including Emerging Threats) so Suricata can detect current threats.
+
+## Checking Suricata Version 
+'''bash 
+suricata --version
+'''
