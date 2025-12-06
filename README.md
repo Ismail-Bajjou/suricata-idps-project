@@ -20,10 +20,16 @@ This lab uses a simple 3‑machine network:
 - **Metasploitable (Victim):** vulnerable machine used to trigger Suricata alerts.
 ![suricata-idps-project](images/Architecture.png)
 
-
 Suricata can operate in two modes:
 - **IDS mode (passive):** Suricata only listens and generates alerts.  
 - **IPS mode (inline):** Suricata analyzes packets and drops malicious ones in real time.
 
 This architecture allows testing detection first, then prevention.
 
+
+## Installing Suricata
+```bash
+sudo apt update
+sudo apt install suricata
+sudo suricata-update
+```
