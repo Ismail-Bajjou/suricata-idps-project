@@ -27,9 +27,10 @@ Suricata can operate in two modes:
 This architecture allows testing detection first, then prevention.
 
 
-## Installing Suricata
+## Suricata Installation
 ```bash
-sudo apt update
-sudo apt install suricata
-sudo suricata-update
+sudo apt update && sudo apt install suricata && sudo suricata-update
 ```
+**suricata-update** is the official way to update and manage rules for Suricata.
+It downloads the latest rules (including Emerging Threats) so Suricata can detect current threats.
+For more details, see the [official Suricata documentation]([https://suricata.io/docs/](https://docs.suricata.io/en/suricata-8.0.0/rule-management/suricata-update.html)).
