@@ -38,3 +38,4 @@ It downloads the latest rules (including Emerging Threats) so Suricata can detec
 ```bash 
 suricata --version
 ```
+![suricata-idps-project](images/version.png)
